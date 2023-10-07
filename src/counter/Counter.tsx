@@ -13,12 +13,12 @@ const Counter = ({ initialCount }: { initialCount: number }) => {
 
     return (
         <View style={{ flex: 1, justifyContent: 'center', paddingHorizontal: 20 }}>
-            <Text >Count: {count}</Text>
+            <Text testID='count-display'>{count}</Text>
             <View style={{ marginTop: 20 }}>
-                <Button onPress={incrementCount} title='Increment' />
+                <Button testID='increment-button' onPress={incrementCount} title='Increment' />
             </View>
             <View style={{ marginTop: 20 }}>
-                <Button onPress={decrementCount} title='Decrement' />
+                <Button testID='decrement-button' onPress={decrementCount} title='Decrement' />
             </View>
         </View>
     )
